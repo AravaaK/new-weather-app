@@ -61,10 +61,11 @@ footer {
 .label {
   color: #0d6efd;
   line-height: 1px;
+  font-size: 18px;
 }
 
 .degrees {
-  font-size: 14px;
+  font-size: 12px;
   position: relative;
   top: -11px;
   color: #858585;
