@@ -1,3 +1,36 @@
-h1 {
-  color: blue;
+form {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+h1,
+h2 {
+  color: black;
+  font-family: "Inspiration", cursive;
+}
+h2 {
+  color: black;
+  font-family: "Inspiration", cursive;
+}
+
+li {
+  list-style: none;
+  text-align: -webkit-match-parent;
+  display: inline;
+  margin: 0 15px;
+}
+.degrees {
+  font-size: 14px;
+  position: relative;
+  top: -13px;
+}
+
+.col {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px 10px;
+  text-align: center;
+}
+.measurments {
+  text-align: center;
 }
