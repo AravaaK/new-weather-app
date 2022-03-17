@@ -1,7 +1,7 @@
 body {
   max-width: 700px;
   padding: 30px;
-  margin: 30px 20px;
+  margin: 30px 25px;
   border: 1px solid #dadde1;
   border-radius: 8px;
 }
@@ -20,8 +20,9 @@ h2 {
   padding-bottom: 5px;
 }
 li {
-  display: inline-block;
   margin: 0 15px;
+  list-style: none;
+  font-size: 18px;
 }
 
 footer {
@@ -45,14 +46,12 @@ footer {
   margin: 15px;
   padding: 35px 10px;
   text-align: center;
+  font-size: 16px;
 }
 .description {
   font-size: 18px;
 }
 
-.measurments {
-  margin-bottom: 40px;
+footer {
   font-size: 18px;
-  text-align: center;
-  padding: 35px 25px;
 }
