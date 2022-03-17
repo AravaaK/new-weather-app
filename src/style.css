@@ -1,23 +1,38 @@
-form {
-  margin-top: 40px;
-  margin-bottom: 25px;
-}
-h1,
-h2 {
-  color: black;
-  font-family: "Inspiration", cursive;
-}
-h2 {
-  color: black;
-  font-family: "Inspiration", cursive;
+body {
+  max-width: 700px;
+  padding: 30px;
+  margin: 30px 20px;
+  border: 1px solid #dadde1;
+  border-radius: 8px;
 }
 
+form {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+h1 {
+  color: black;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+h2 {
+  padding-bottom: 5px;
+}
 li {
-  list-style: none;
-  text-align: -webkit-match-parent;
-  display: inline;
+  display: inline-block;
   margin: 0 15px;
 }
+
+footer {
+  text-align: center;
+}
+
+.day {
+  color: black;
+  font-size: 18px;
+}
+
 .degrees {
   font-size: 14px;
   position: relative;
@@ -28,9 +43,16 @@ li {
   border: 1px solid black;
   border-radius: 10px;
   margin: 15px;
-  padding: 20px 10px;
+  padding: 35px 10px;
   text-align: center;
 }
+.description {
+  font-size: 18px;
+}
+
 .measurments {
+  margin-bottom: 40px;
+  font-size: 18px;
   text-align: center;
+  padding: 35px 25px;
 }
