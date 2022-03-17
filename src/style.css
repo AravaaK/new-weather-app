@@ -3,17 +3,18 @@ body {
 }
 form {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 h1 {
-  margin-bottom: 0 auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-size: 20px;
   color: #858585;
   font-weight: 400;
 }
 
 h2 {
-  padding-bottom: 5px;
+  padding-bottom: 0 auto;
   color: #858585;
 }
 
