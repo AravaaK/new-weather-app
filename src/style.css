@@ -1,43 +1,38 @@
 body {
-  max-width: 700px;
-  padding: 30px;
-  margin: 30px 25px;
-  border: 1px solid #dadde1;
-  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 form {
-  font-size: 22px;
-  margin-bottom: 25px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 h1 {
-  color: black;
-  margin: 0 auto;
-  font-size: 22px;
+  margin-bottom: 0 auto;
+  font-size: 20px;
+  color: #858585;
+  font-weight: 400;
 }
 
 h2 {
   padding-bottom: 5px;
+  color: #858585;
 }
+
 li {
   margin: 0 15px;
   list-style: none;
-  font-size: 18px;
+  font-size: 16px;
+  color: black;
+  color: #858585;
 }
 
 footer {
   text-align: center;
+  font-size: 14px;
 }
-
 .day {
   color: black;
   font-size: 18px;
-}
-
-.degrees {
-  font-size: 14px;
-  position: relative;
-  top: -13px;
+  color: #858585;
 }
 
 .col {
@@ -47,11 +42,30 @@ footer {
   padding: 35px 10px;
   text-align: center;
   font-size: 16px;
+  color: black;
 }
 .description {
   font-size: 18px;
+  color: #858585;
 }
 
-footer {
-  font-size: 18px;
+.weather-app {
+  padding: 30px;
+  margin: 30px 30px;
+  max-width: 700px;
+  border: 1px solid #dadde1;
+  border-radius: 8px;
+}
+
+.label {
+  color: #0d6efd;
+  line-height: 1px;
+}
+
+.degrees {
+  font-size: 14px;
+  position: relative;
+  top: -11px;
+  color: #858585;
+  margin-left: -8px;
 }
