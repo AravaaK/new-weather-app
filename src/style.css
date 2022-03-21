@@ -12,12 +12,6 @@ h1 {
   color: #858585;
   font-weight: 400;
 }
-
-h2 {
-  padding-bottom: 0 auto;
-  color: #858585;
-}
-
 li {
   margin: 0 15px;
   list-style: none;
@@ -30,10 +24,10 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-.day {
-  color: black;
+.time {
   font-size: 18px;
   color: #858585;
+  line-height: 4px;
 }
 
 .col {
@@ -44,10 +38,6 @@ footer {
   text-align: center;
   font-size: 16px;
   color: black;
-}
-.description {
-  font-size: 18px;
-  color: #858585;
 }
 
 .weather-app {
