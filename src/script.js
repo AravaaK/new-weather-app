@@ -24,20 +24,23 @@ function formatDate(timestamp) {
 
 function showTemperature(response) {
   let city = document.querySelector("#city");
-  city.innerHTML = response.data.name;
   let temp = document.querySelector("#label");
-  temp.innerHTML = Math.round(response.data.main.temp);
   let description = document.querySelector("#description");
-  description.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = response.data.main.humidity;
   let feelsLikeElement = document.querySelector("#feelsLike");
-  feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like);
   let windSpeedElement = document.querySelector("#windSpeed");
-  windSpeedElement.innerHTML = Math.round(response.data.wind.speed);
   let dateElement = document.querySelector("#date");
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
   let iconElement = document.querySelector("#icon");
+
+  celsiusTemperature = response.data.main.temp;
+
+  city.innerHTML = response.data.name;
+  temp.innerHTML = Math.round(celsiusTemperature);
+  description.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like);
+  windSpeedElement.innerHTML = Math.round(response.data.wind.speed);
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -59,15 +62,20 @@ function handleSubmit(event) {
 
 function displayFahrenheitTemp(event) {
   event.preventDefault();
-  let fahrenheitTemp = (-1 * 9) / 5 + 32;
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   let degreesElement = document.querySelector("#label");
   degreesElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
-search("New york");
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusheitLink.addEventListener("click", displaycelsiusTemp);
+
+search("New york");
