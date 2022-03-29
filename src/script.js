@@ -62,9 +62,20 @@ function handleSubmit(event) {
 
 function displayFahrenheitTemp(event) {
   event.preventDefault();
-  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   let degreesElement = document.querySelector("#label");
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   degreesElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+function displaycelsiusTemp(event) {
+  event.preventDefault();
+  let degreesElement = document.querySelector("#label");
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  degreesElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 let celsiusTemperature = null;
@@ -76,6 +87,6 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusheitLink.addEventListener("click", displaycelsiusTemp);
+celsiusLink.addEventListener("click", displaycelsiusTemp);
 
 search("New york");
