@@ -39,8 +39,8 @@ footer {
   color: black;
 }
 
-.degrees {
-  font-size: 12px;
+.celcius {
+  font-size: 10px;
   padding-left: 5px;
   padding-right: 10px;
   position: relative;
@@ -65,6 +65,6 @@ footer {
 .active:hover {
   color: black;
 }
-.units-minimum {
+.units-maximum {
   opacity: 0.6;
 }
