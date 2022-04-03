@@ -4,17 +4,18 @@ body {
 form {
   font-size: 20px;
   margin-bottom: 15px;
+  padding-bottom: 10px;
 }
 h1 {
   font-size: 20px;
-  color: #858585;
+  color: #305973;
   font-weight: 400;
 }
 li {
-  margin: 0 15px;
+  margin: 10px 15px;
   list-style: none;
   font-size: 16px;
-  color: #858585;
+  color: #305973;
 }
 
 footer {
@@ -24,12 +25,12 @@ footer {
 
 .time {
   font-size: 18px;
-  color: #858585;
+  color: #305973;
   line-height: 4px;
 }
 
 .col-2 {
-  border: 1px solid black;
+  border: 1px solid #ef7e56;
   border-radius: 10px;
   margin: 10px;
   padding: 15px 10px;
@@ -40,14 +41,15 @@ footer {
 
 .temp {
   font-size: 32px;
-  color: #343a40;
+  color: #305973;
+  margin: 0;
 }
 .celcius {
   font-size: 12px;
-  padding-left: 5px;
-  padding-right: 10px;
+  padding-left: 0 auto;
+  padding-right: 5px;
   position: relative;
-  color: #858585;
+  color: #305973;
   top: -13px;
   margin-left: -8px;
 }
@@ -55,15 +57,18 @@ footer {
 .narrative {
   font-size: 22px;
   font-weight: 400;
-  color: #343a40;
-  color: #858585;
+  color: #305973;
 }
 
+.measurements {
+  padding-left: 10px;
+}
 .weather-app {
+  background-color: #f9f9f9;
   padding: 30px;
   margin: 30px 30px;
   max-width: 700px;
-  border: 1px solid #dadde1;
+  border: 1px solid #98ccd3;
   border-radius: 8px;
 }
 
